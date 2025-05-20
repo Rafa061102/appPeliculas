@@ -1,0 +1,63 @@
+/* ========== Galería de Actores ========== */
+.galeria-actores {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 12px;
+  scroll-snap-type: x mandatory;
+}
+
+.slide-actor {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.card-actor {
+  width: 100px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+/* Imagen circular de actor */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 6px;
+}
+
+.actor-name {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+
+/* ========== Poster Detalle y Título ========== */
+.poster-detalle-sobre {
+  position: relative;
+  top: -75px;
+  left: -10px;
+  margin-bottom: -75px;
+}
+
+.titulo {
+  width: 100%;
+  position: relative; /* <-- antes: absolute */
+  color: white;
+  padding: 16px 12px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 2;
+}
+
+.titulo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative; /* <-- antes: absolute */
+}
+

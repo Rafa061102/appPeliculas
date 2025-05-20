@@ -1,0 +1,9 @@
+<div class="galeria-horizontal">
+  <div class="slide" *ngFor="let pelicula of peliculas">
+    <div class="borde-degradado">
+      <ion-card mode="md" (click)="verDetalle(pelicula.id.toString())">
+        <img class="poster" [src]="pelicula.poster_path || '' | imagen">
+      </ion-card>
+    </div>
+  </div>
+</div>

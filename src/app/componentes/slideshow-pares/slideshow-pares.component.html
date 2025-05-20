@@ -1,0 +1,30 @@
+<!-- home.page.html (o donde tengas tu galería) -->
+<div class="galeria-horizontal">
+  <!-- Cada 'slide' es un par de películas -->
+  <div class="slide" *ngFor="let pares of peliculas | pares">
+    <div class="pair-container">
+      <ion-card
+        mode="md"
+        *ngFor="let pelicula of pares"
+        (click)="verDetalle(pelicula.id)"
+      >
+        <img
+          class="poster"
+          [src]="(pelicula.poster_path || '') | imagen"
+        />
+      </ion-card>
+    </div>
+  </div>
+
+
+<!-- Botón "más" como una tarjeta adicional al final -->
+<div class="slide-mas">
+  <ion-button
+    expand="full"
+    class="btn-mas"
+    size="large"
+    (click)="onClick()"
+  >
+    <ion-icon name="add" slot="icon-only"></ion-icon>
+  </ion-button>
+</div>

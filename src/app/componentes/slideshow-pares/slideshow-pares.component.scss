@@ -1,0 +1,53 @@
+/* home.page.scss (o el archivo de estilos de tu componente) */
+.galeria-horizontal {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.pair-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center; /* centra las cards dentro de la slide */
+}
+
+ion-card {
+  width: 120px;     /* ajusta al ancho que quieras para cada imagen */
+  flex-shrink: 0;   /* evita que se encojan */
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.slide-mas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* BOTON DE INFINITE SCROLL */
+
+
+.slide-mas {
+    height: 300px;
+}
+
+
+.btn-mas {
+    position: relative;
+    top: 13%;
+}

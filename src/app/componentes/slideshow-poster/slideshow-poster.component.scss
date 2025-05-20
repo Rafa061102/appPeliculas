@@ -1,0 +1,44 @@
+.galeria-horizontal {
+  display: flex;
+  overflow-x: auto;
+  gap: 5px;
+  padding: 2px;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: auto;
+  scroll-snap-align: start;
+}
+
+ion-card {
+  width: 120px; /* o 150px según tu preferencia */
+  flex-shrink: 0;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.borde-degradado {
+  padding: 3px; /* grosor del borde degradado */
+  border-radius: 12px;
+  background: linear-gradient(135deg, #141414, #ffffff, #444444); /* colores del degradado */
+}
+
+.borde-degradado ion-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff; /* o cualquier fondo del card */
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+

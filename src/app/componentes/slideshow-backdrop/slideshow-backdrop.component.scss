@@ -1,0 +1,23 @@
+.galeria-horizontal {
+  display: flex;
+  overflow-x: auto;
+  padding: 3px;
+  gap: 10px;
+}
+
+.pelicula {
+  flex: 0 0 auto;
+  width: 300px;
+}
+
+.borde-degradado {
+  padding: 1px; /* grosor del borde */
+  border-radius: 5px;
+  background: linear-gradient(45deg, #000000, #ffffff, #8e8f90); /* ejemplo de degradado */
+}
+
+.borde-degradado ion-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff; /* o el color de fondo que uses */
+}

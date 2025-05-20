@@ -1,0 +1,9 @@
+<div class="galeria-horizontal">
+  <div class="pelicula" *ngFor="let pelicula of peliculas">
+    <div class="borde-degradado">
+      <ion-card (click)="verDetalle(pelicula.id.toString())">
+        <img [src]="pelicula.backdrop_path | imagen" />
+      </ion-card>
+    </div>
+  </div>
+</div>
