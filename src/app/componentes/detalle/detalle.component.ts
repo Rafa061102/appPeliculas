@@ -28,7 +28,7 @@ export class DetalleComponent implements OnInit {
      console.log('ID', this.id );
 
 
-      this.moviesService.getPeliculaDetalle( this.id )
+    this.moviesService.getPeliculaDetalle( this.id )
         .subscribe( resp => {
           console.log( resp );
           this.pelicula = resp;

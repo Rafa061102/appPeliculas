@@ -24,16 +24,13 @@ export class SlideshowPosterComponent implements OnInit {
   }
 
   async verDetalle( id: string ) {
-
     const modal = await this.modalCtrl.create({
       component: DetalleComponent,
       componentProps: {
         id
       }
     });
-
     modal.present();
-
   }
 
 }

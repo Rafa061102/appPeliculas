@@ -34,7 +34,6 @@ export class Tab1Page implements OnInit{
     this.getPopulares();
   }
 
-
   getPopulares() {
     this.moviesService.getPopulares()
     .subscribe( resp => {

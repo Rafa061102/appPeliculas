@@ -78,8 +78,7 @@ export interface RespuestaMDB {
     genres: Genre[];
 }
 
-  
-  
+
   export interface RespuestaCredits {
     id: number;
     cast: Cast[];

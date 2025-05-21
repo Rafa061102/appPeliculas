@@ -1,9 +1,11 @@
-.galeria-horizontal {
+.horizontal {
   display: flex;
   overflow-x: auto;
   padding: 3px;
   gap: 10px;
 }
+
+
 
 .pelicula {
   flex: 0 0 auto;
